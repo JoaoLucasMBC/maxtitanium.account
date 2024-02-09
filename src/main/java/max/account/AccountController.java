@@ -1,6 +1,7 @@
 package max.account;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +19,6 @@ public interface AccountController {
     @PutMapping("/accounts/{id}")
     public ResponseEntity<AccountOut> update(@PathVariable(required = true) String id, @RequestBody(required = true) AccountIn accountIn);
 
-    @GetMapping("/accounts/{id}")
+    @DeleteMapping("/accounts/{id}")
     public ResponseEntity<AccountOut> delete(@PathVariable(required = true) String id);
 }
