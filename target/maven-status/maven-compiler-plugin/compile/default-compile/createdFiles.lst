@@ -1,5 +1,5 @@
-max\account\AccountOut.class
-max\account\AccountController.class
-max\account\AccountIn$AccountInBuilder.class
-max\account\AccountIn.class
-max\account\AccountOut$AccountOutBuilder.class
+max/account/AccountOut$AccountOutBuilder.class
+max/account/AccountController.class
+max/account/AccountOut.class
+max/account/AccountIn$AccountInBuilder.class
+max/account/AccountIn.class
