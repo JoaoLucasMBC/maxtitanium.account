@@ -1,5 +1,7 @@
+max/account/LoginIn.class
 max/account/AccountOut$AccountOutBuilder.class
 max/account/AccountOut.class
 max/account/AccountController.class
+max/account/LoginIn$LoginInBuilder.class
 max/account/AccountIn.class
 max/account/AccountIn$AccountInBuilder.class
