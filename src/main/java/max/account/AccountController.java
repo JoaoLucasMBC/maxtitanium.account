@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 
 @FeignClient(name = "max-account")
 public interface AccountController {
@@ -26,4 +27,10 @@ public interface AccountController {
 
     @DeleteMapping("/accounts/{id}")
     public ResponseEntity<AccountOut> delete(@PathVariable(required = true) String id);
+
+    @GetMapping("/accounts")
+    public ResponseEntity<AccountOut> list(
+        @RequestHeader(required= true, name = "id-user") String idUser,
+        @RequestHeader(required= true, name = "role") String roleUser
+    );
 }
